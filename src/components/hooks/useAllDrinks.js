@@ -4,7 +4,7 @@ const useAllDrinks = (name) => {
   const [loading, setLoading] = useState(true);
   const [drinks, setDrinks] = useState([]);
   const url = `http://localhost:5000/categoriesDrinks?catName=${name}`;
-  console.log(url);
+  // console.log(url);
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
